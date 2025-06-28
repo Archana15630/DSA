@@ -1,0 +1,23 @@
+create database db;
+use db;
+create table sample(
+rollno int,
+name varchar(100),
+department varchar(100),
+grade varchar(5)
+);
+select *from sample;
+select name,rollno,department from sample;
+insert into sample(rollno,name,department,grade)values
+(1,"achu","cs","a"),
+(2,"rithu","ecs","a"),
+(3,"sam","ecs","b"),
+(4,"swetha","IT","b"),
+(5,"hem","CT","a");
+update sample set name="data" where rollno=2;
+alter table sampleatabase add phoneno varchar(100); 
+update sample set phoneno="6537898779" where rollno=1;
+update sample set phoneno="0987655438" where rollno=2;
+alter table sample drop phoneno;
+truncate table sample;
+drop table sample;
